@@ -1,9 +1,10 @@
+#ifndef BOUNCE_OUT
+#define BOUNCE_OUT
+
 #ifndef PI
 #define PI 3.141592653589793
 #endif
 
-#ifndef BOUNCE_OUT
-#define BOUNCE_OUT
 float bounceOut(float t) {
   const float a = 4.0 / 11.0;
   const float b = 8.0 / 11.0;
@@ -13,7 +14,7 @@ float bounceOut(float t) {
   const float cb = 35442.0 / 1805.0;
   const float cc = 16061.0 / 1805.0;
 
-  float t2 = t * t;
+  const float t2 = t * t;
 
   return t < a
     ? 7.5625 * t2
@@ -25,3 +26,4 @@ float bounceOut(float t) {
 }
  
 #endif
+

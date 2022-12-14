@@ -1,4 +1,4 @@
-#include "./bounce-out.hlsl"
+#include "bounce-out.hlsl"
 
 #ifndef BOUNCE_IN_OUT
 #define BOUNCE_IN_OUT

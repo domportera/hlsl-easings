@@ -1,10 +1,10 @@
+#ifndef BACK_IN_OUT
+#define BACK_IN_OUT
+
 #ifndef PI
 #define PI 3.141592653589793
 #endif
  
-#ifndef BACK_IN_OUT
-#define BACK_IN_OUT
-
 float backInOut(float t) {
   float f = t < 0.5
     ? 2.0 * t
